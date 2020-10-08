@@ -4,9 +4,8 @@ import string
 
 def main():
     userInput = input("Entrez le mot a crypter: ")
-    wordToCrypt = []
     numberLetter = []
-    for e in list(userInput):
+    for e in userInput:
         numberLetter.append(str(string.ascii_lowercase.index(e)))
     key = np.matrix('15 0 15 12; 22 8 14 2; 14 6 23 1; 8 1 6 5') #With keys POP WIT OGH
     print(key," \n--------\n")
